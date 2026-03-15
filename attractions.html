@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Attractions & Zones — Bharat Vandana Park, Dwarka Delhi</title>
+  <meta name="description" content="Explore all 10 thematic zones at Bharat Vandana Park — Mini India monuments, Vandana Sarovar, Skywalk, Adventure Zone, Musical Fountain, Meditation Garden and more." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+  <style>
+    .zone-section { padding: 72px 0; }
+    .zone-section:nth-child(even) { background: var(--cream); }
+    .zone-section:nth-child(odd)  { background: white; }
+    .zone-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .zone-layout.reverse { direction: rtl; }
+    .zone-layout.reverse > * { direction: ltr; }
+    .zone-img { width: 100%; height: 400px; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); }
+    .zone-number { font-family: 'Playfair Display', serif; font-size: 5rem; font-weight: 900; color: rgba(27,94,32,0.08); line-height: 1; margin-bottom: -16px; }
+    .zone-title { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; color: var(--text-dark); margin-bottom: 12px; }
+    .zone-desc { color: var(--text-mid); line-height: 1.8; margin-bottom: 20px; font-size: 0.97rem; }
+    .zone-features { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; }
+    .zone-tag { background: var(--green-pale); color: var(--green-dark); padding: 5px 14px; border-radius: 50px; font-size: 0.78rem; font-weight: 600; border: 1px solid rgba(46,125,50,0.2); }
+    .monuments-full-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 28px; }
+    .monument-full-chip { background: var(--cream); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 12px; text-align: center; transition: var(--transition); }
+    .monument-full-chip:hover { border-color: var(--green-med); background: var(--green-pale); transform: translateY(-2px); }
+    .monument-full-chip .mf-icon { font-size: 1.8rem; display: block; margin-bottom: 6px; }
+    .monument-full-chip .mf-name { font-size: 0.78rem; font-weight: 600; color: var(--text-dark); line-height: 1.3; }
+    .monument-full-chip .mf-state { font-size: 0.7rem; color: var(--text-light); }
+    @media(max-width:768px) {
+      .zone-layout, .zone-layout.reverse { grid-template-columns: 1fr; direction: ltr; gap: 32px; }
+      .monuments-full-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-strip"><div class="container"><div class="strip-left"><span>📞 1800-11-0332</span><span>✉️ bvp@dda.gov.in</span></div><div class="strip-right"><a href="#">हिन्दी</a><a href="https://dda.gov.in" target="_blank">DDA Site ↗</a></div></div></div>
+
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo-wrap"><div class="logo-emblem">🌿</div><div class="logo-text"><span class="logo-title">Bharat Vandana Park</span><span class="logo-sub">Dwarka, New Delhi — Delhi Development Authority</span></div></a>
+      <nav>
+        <a href="index.html"         class="nav-link">Home</a>
+        <a href="about.html"         class="nav-link">About</a>
+        <a href="attractions.html"   class="nav-link active">Attractions</a>
+        <a href="gallery.html"       class="nav-link">Gallery</a>
+        <a href="visiting-info.html" class="nav-link">Visitor Info</a>
+        <a href="contact.html"       class="nav-link">Contact</a>
+        <a href="visiting-info.html#tickets" class="nav-link nav-cta">Plan Your Visit</a>
+      </nav>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mobile-nav">
+    <a href="index.html" class="nav-link">🏠 Home</a><a href="about.html" class="nav-link">📖 About</a>
+    <a href="attractions.html" class="nav-link active">🎡 Attractions</a><a href="gallery.html" class="nav-link">🖼️ Gallery</a>
+    <a href="visiting-info.html" class="nav-link">🗓️ Visitor Info</a><a href="contact.html" class="nav-link">📞 Contact</a>
+    <a href="visiting-info.html#tickets" class="nav-link nav-cta">Plan Your Visit →</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span style="color:rgba(255,255,255,0.85);">Attractions</span></div>
+      <h1 class="page-hero-title">Attractions & Zones</h1>
+      <p class="page-hero-sub">Ten thematic zones, 220 acres, and a lifetime of experiences — discover everything that awaits you at Bharat Vandana Park.</p>
+    </div>
+  </section>
+
+  <!-- Zone 1: Mini India -->
+  <section class="zone-section" id="mini-india">
+    <div class="container">
+      <div class="zone-layout reveal">
+        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=700&q=80" alt="Mini India Monument Replicas" class="zone-img" />
+        <div>
+          <div class="zone-number">01</div>
+          <div class="section-tag">Heritage Zone</div>
+          <h2 class="zone-title">Mini India Zone</h2>
+          <p class="zone-desc">The crown jewel of Bharat Vandana Park — a breathtaking walk through India's 5,000-year architectural legacy. Thirty-six scaled monument replicas, grouped into 7 regional clusters, recreate the country's most iconic landmarks using materials authentic to their originals. Each cluster is surrounded by state-specific landscaping and informational panels in Hindi, English, and regional languages.</p>
+          <p class="zone-desc">This is the world's first park where a visitor can walk from the Himalayan temples of the north to the coastal shrines of Tamil Nadu in a single afternoon, experiencing India's remarkable architectural diversity in one magnificent journey.</p>
+          <div class="zone-features">
+            <span class="zone-tag">36 Monument Replicas</span>
+            <span class="zone-tag">7 Regional Clusters</span>
+            <span class="zone-tag">Audio Guides</span>
+            <span class="zone-tag">Info Panels</span>
+            <span class="zone-tag">Photography Spots</span>
+          </div>
+        </div>
+      </div>
+      <div class="monuments-full-grid reveal">
+        <div class="monument-full-chip"><span class="mf-icon">🕌</span><span class="mf-name">Taj Mahal</span><span class="mf-state">Uttar Pradesh</span></div>
+        <div class="monument-full-chip"><span class="mf-icon">🏰</span><span class="mf-name">Red Fort</span><span class="mf-state">Delhi</span></div>
+        <div class="monument-full-chip"><span class="mf-icon">🗼</span><span class="mf-name">Qutub Minar</span><span class="mf-state">Delhi</span></div>
+        <div class="monument-full-chip"><span class="mf-icon">🌅</span><span class="mf-name">Konark Sun Temple</span><span class="mf-state">Odisha</span></div>
+        <div class="monument-full-chip"><span class="mf-icon">🏛️</span><span class="mf-name">Gateway of India</span><span class="mf-state">Maharashtra</span></div>
+        <div class="monument-full-chip"><span class="mf-icon">⛩️</span><span class="mf-name">Hawa Mahal</span><span class="mf-state">Rajasthan</span></div>
+        <div class="monument-full-chip"><span class="mf-icon">🕍</span><span class="mf-name">Charminar</span><span class="mf-state">Telangana</span></div>
+        <div class="monument-full-chip"><span class="mf-icon">🏯</span><span class="mf-name">Mysore Palace</span><span class="mf-state">Karnataka</span></div>
+        <div class="monument-full-chip"><span class="mf-icon">☸️</span><span class="mf-name">Sanchi Stupa</span><span class="mf-state">Madhya Pradesh</span></div>
+        <div class="monument-full-chip"><span class="mf-icon">🌊</span><span class="mf-name">Somnath Temple</span><span class="mf-state">Gujarat</span></div>
+        <div class="monument-full-chip"><span class="mf-icon">🏔️</span><span class="mf-name">Badrinath Dham</span><span class="mf-state">Uttarakhand</span></div>
+        <div class="monument-full-chip"><span class="mf-icon">🎭</span><span class="mf-name">Victoria Memorial</span><span class="mf-state">West Bengal</span></div>
+        <div class="monument-full-chip"><span class="mf-icon">🏵️</span><span class="mf-name">Khajuraho Temples</span><span class="mf-state">Madhya Pradesh</span></div>
+        <div class="monument-full-chip"><span class="mf-icon">🌺</span><span class="mf-name">Jagannath Puri</span><span class="mf-state">Odisha</span></div>
+        <div class="monument-full-chip"><span class="mf-icon">⚡</span><span class="mf-name">Tirupati Balaji</span><span class="mf-state">Andhra Pradesh</span></div>
+        <div class="monument-full-chip"><span class="mf-icon">🛡️</span><span class="mf-name">Gol Gumbaz</span><span class="mf-state">Karnataka</span></div>
+        <div class="monument-full-chip"><span class="mf-icon">📜</span><span class="mf-name">Ajanta Caves</span><span class="mf-state">Maharashtra</span></div>
+        <div class="monument-full-chip"><span class="mf-icon">🔺</span><span class="mf-name">India Gate</span><span class="mf-state">Delhi</span></div>
+        <div class="monument-full-chip"><span class="mf-icon">🌸</span><span class="mf-name">Lotus Temple</span><span class="mf-state">Delhi</span></div>
+        <div class="monument-full-chip"><span class="mf-icon">⭐</span><span class="mf-name">Rameshwaram</span><span class="mf-state">Tamil Nadu</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zone 2: Vandana Sarovar -->
+  <section class="zone-section" id="sarovar">
+    <div class="container">
+      <div class="zone-layout reverse reveal">
+        <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?w=700&q=80" alt="Vandana Sarovar Central Lake" class="zone-img" />
+        <div>
+          <div class="zone-number">02</div>
+          <div class="section-tag">Lake Zone</div>
+          <h2 class="zone-title">Vandana Sarovar</h2>
+          <p class="zone-desc">At the heart of Bharat Vandana Park lies Vandana Sarovar — a magnificent 26-acre central lake that serves as the visual, ecological, and spiritual focal point of the entire park. Its name means "Lake of Salutation" — a serene mirror reflecting the monuments, sky, and soul of India.</p>
+          <p class="zone-desc">The lake is fed by treated recycled water from the park's four on-site STPs and rainwater harvesting systems, making it an environmentally exemplary water body. A lakeside promenade, viewing platforms, and pedestrian bridges allow visitors to experience the lake from every angle.</p>
+          <div class="zone-features">
+            <span class="zone-tag">26 Acre Lake</span>
+            <span class="zone-tag">Boating Facility</span>
+            <span class="zone-tag">Lake Promenade</span>
+            <span class="zone-tag">Evening Fountain Show</span>
+            <span class="zone-tag">Lakeside Dining</span>
+            <span class="zone-tag">Eco Water System</span>
+          </div>
+          <a href="visiting-info.html" class="btn-green">Plan Boating Visit →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zone 3: Skywalk -->
+  <section class="zone-section" id="skywalk">
+    <div class="container">
+      <div class="zone-layout reveal">
+        <img src="https://images.unsplash.com/photo-1516616370751-86d6bd8b0651?w=700&q=80" alt="Skywalk Bridge and Pylons" class="zone-img" />
+        <div>
+          <div class="zone-number">03</div>
+          <div class="section-tag">Aerial Experience</div>
+          <h2 class="zone-title">Skywalk & Pylon Towers</h2>
+          <p class="zone-desc">One of the most dramatic and visually stunning engineering feats in any Indian city park — the Skywalk is a 1.2-kilometre elevated walkway suspended 18 metres above ground, supported by nine towering pylons each standing 44 metres high.</p>
+          <p class="zone-desc">Inspired by Singapore's iconic Gardens by the Bay Supertrees, the pylons are constructed using Tata Structura high-ductility hollow steel sections, specially engineered to be bent into complex curves without fracturing — a first in Indian park construction. From the Skywalk, visitors enjoy unobstructed 360-degree aerial views of all 10 zones, Vandana Sarovar, and the monument replicas below.</p>
+          <div class="zone-features">
+            <span class="zone-tag">1.2 km Length</span>
+            <span class="zone-tag">18m Height</span>
+            <span class="zone-tag">9 Pylons (44m)</span>
+            <span class="zone-tag">Panoramic Views</span>
+            <span class="zone-tag">Night Lighting</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zone 4: Adventure -->
+  <section class="zone-section" id="adventure">
+    <div class="container">
+      <div class="zone-layout reverse reveal">
+        <img src="https://images.unsplash.com/photo-1551524559-8af4e6624178?w=700&q=80" alt="Adventure Zone Activities" class="zone-img" />
+        <div>
+          <div class="zone-number">04</div>
+          <div class="section-tag">Thrills & Adventure</div>
+          <h2 class="zone-title">Adventure Zone</h2>
+          <p class="zone-desc">For those who prefer their India experience with a side of adrenaline — the Adventure Zone is Bharat Vandana Park's playground for the bold and the curious. Packed with activities for all ages, this zone transforms a visit to the park into a full-day outdoor adventure experience.</p>
+          <div class="zone-features">
+            <span class="zone-tag">Zip-Lining</span>
+            <span class="zone-tag">Tree Surfing</span>
+            <span class="zone-tag">Rock Climbing</span>
+            <span class="zone-tag">Rope Courses</span>
+            <span class="zone-tag">Animatronic Zoo</span>
+            <span class="zone-tag">Obstacle Courses</span>
+          </div>
+          <p class="zone-desc" style="margin-top:12px;">The Animatronic Animal Zoo is a particular favourite — life-like mechanical animals representing India's rich wildlife heritage, from Bengal Tigers to Elephants, create a magical and educational experience for young visitors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zone 5: Fun Park -->
+  <section class="zone-section" id="fun-park">
+    <div class="container">
+      <div class="zone-layout reveal">
+        <img src="https://images.unsplash.com/photo-1575783970733-1aaedde1db74?w=700&q=80" alt="Fun Park Children Zone" class="zone-img" />
+        <div>
+          <div class="zone-number">05</div>
+          <div class="section-tag">Family Fun</div>
+          <h2 class="zone-title">Fun Park & Children's Zone</h2>
+          <p class="zone-desc">A dedicated wonderland for families and children of all ages, the Fun Park is designed to delight, educate, and entertain simultaneously. All installations are inspired by India's cultural motifs — giving children a playful introduction to their heritage while having the time of their lives.</p>
+          <div class="zone-features">
+            <span class="zone-tag">Amusement Rides</span>
+            <span class="zone-tag">Cultural Play</span>
+            <span class="zone-tag">Interactive Stations</span>
+            <span class="zone-tag">Safe Play Areas</span>
+            <span class="zone-tag">Supervised Activities</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zone 6: Musical Fountain -->
+  <section class="zone-section" id="fountain">
+    <div class="container">
+      <div class="zone-layout reverse reveal">
+        <img src="https://images.unsplash.com/photo-1533727937480-da3a97967e95?w=700&q=80" alt="Musical Fountain Night Show" class="zone-img" />
+        <div>
+          <div class="zone-number">06</div>
+          <div class="section-tag">Evening Spectacle</div>
+          <h2 class="zone-title">Musical Fountain & Light Show</h2>
+          <p class="zone-desc">As the sun dips below the horizon and the monuments are bathed in golden light, Vandana Sarovar transforms into a breathtaking canvas of water, light, and music. The state-of-the-art Musical Fountain is Delhi's most spectacular evening entertainment experience — a synchronized ballet of jets, colour, and classical Indian music.</p>
+          <p class="zone-desc">Shows run daily at 7:00 PM and 8:30 PM. Visitors are encouraged to find a lakeside seat well before show time, especially on weekends.</p>
+          <div class="zone-features">
+            <span class="zone-tag">Daily Shows</span>
+            <span class="zone-tag">7:00 PM & 8:30 PM</span>
+            <span class="zone-tag">Light & Water Sync</span>
+            <span class="zone-tag">Indian Music</span>
+            <span class="zone-tag">Lakeside Seating</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zone 7: Meditation Garden -->
+  <section class="zone-section" id="meditation">
+    <div class="container">
+      <div class="zone-layout reveal">
+        <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=700&q=80" alt="Meditation Garden Eco Zone" class="zone-img" />
+        <div>
+          <div class="zone-number">07</div>
+          <div class="section-tag">Peace & Wellness</div>
+          <h2 class="zone-title">Meditation Garden & Eco Forest</h2>
+          <p class="zone-desc">In the midst of Delhi's relentless urban energy, the Meditation Garden is a sanctuary — a carefully curated space where ancient Indian wisdom meets contemporary landscape design. Here, time slows down, the city's noise fades, and nature speaks in whispers.</p>
+          <div class="zone-features">
+            <span class="zone-tag">Zen Landscaping</span>
+            <span class="zone-tag">Yoga Platforms</span>
+            <span class="zone-tag">Herb Garden</span>
+            <span class="zone-tag">Butterfly Garden</span>
+            <span class="zone-tag">Eco Trail</span>
+            <span class="zone-tag">Native Plant Species</span>
+            <span class="zone-tag">Bird-Friendly Zone</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zone 8–10 Quick -->
+  <section class="zone-section" id="other-zones">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">More Experiences</div>
+        <h2 class="section-title">Zones 8, 9 & <span class="title-accent">10</span></h2>
+      </div>
+      <div class="attractions-grid reveal-stagger">
+        <div class="attraction-card" id="cultural">
+          <div class="attraction-img-wrap">
+            <img src="https://images.unsplash.com/photo-1566375638485-88c0a7dd5fce?w=500&q=80" alt="Cultural Performance Area" class="attraction-img" />
+            <span class="attraction-zone">Zone 8</span>
+          </div>
+          <div class="attraction-body">
+            <div class="attraction-icon">🎭</div>
+            <h3 class="attraction-title">Cultural Performance Area</h3>
+            <p class="attraction-desc">An open-air amphitheatre hosting folk dances, classical music, national festivals, community events, and cultural programmes from every corner of India — a living stage for India's living traditions.</p>
+          </div>
+        </div>
+        <div class="attraction-card" id="food">
+          <div class="attraction-img-wrap">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=500&q=80" alt="Lake View Restaurant Delhi" class="attraction-img" />
+            <span class="attraction-zone">Zone 9</span>
+          </div>
+          <div class="attraction-body">
+            <div class="attraction-icon">🍽️</div>
+            <h3 class="attraction-title">Lake View Restaurants</h3>
+            <p class="attraction-desc">Fine-dining and casual dining restaurants overlooking Vandana Sarovar, serving regional Indian cuisine and multicuisine menus. Food courts and kiosks offering India's favourite street foods are distributed across the park.</p>
+          </div>
+        </div>
+        <div class="attraction-card" id="eco">
+          <div class="attraction-img-wrap">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&q=80" alt="Eco Forest Green Zone" class="attraction-img" />
+            <span class="attraction-zone">Zone 10</span>
+          </div>
+          <div class="attraction-body">
+            <div class="attraction-icon">🌲</div>
+            <h3 class="attraction-title">Eco-Sensitive Forest Zone</h3>
+            <p class="attraction-desc">98 acres of native tree cover — an urban forest within the city. Features biodiversity trails, medicinal plant collections from every Indian state, and bird-watching zones with over 100 recorded species.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter-band"><div class="container"><div class="newsletter-inner reveal"><h2 class="newsletter-title">Plan Your Visit Today</h2><p class="newsletter-sub">Get park updates, event schedules and visitor tips in your inbox.</p><form class="newsletter-form" onsubmit="return false;"><input type="email" class="newsletter-input" placeholder="Your email" required /><button type="submit" class="newsletter-btn">Subscribe</button></form></div></div></section>
+
+  <footer>
+    <div class="footer-main"><div class="container"><div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo"><div class="logo-emblem" style="width:48px;height:48px;font-size:1.4rem;">🌿</div><div class="logo-text"><span class="logo-title" style="color:white;">Bharat Vandana Park</span><span class="logo-sub">Dwarka, New Delhi</span></div></div><p class="footer-about">India's grandest cultural theme park. A DDA initiative celebrating India's Unity in Diversity.</p><div class="footer-social"><a href="#" class="social-btn">f</a><a href="#" class="social-btn">𝕏</a><a href="#" class="social-btn">📷</a><a href="#" class="social-btn">▶</a></div></div>
+      <div><h4 class="footer-col-title">Quick Links</h4><div class="footer-links"><a href="index.html" class="footer-link">→ Home</a><a href="about.html" class="footer-link">→ About</a><a href="attractions.html" class="footer-link">→ Attractions</a><a href="gallery.html" class="footer-link">→ Gallery</a><a href="visiting-info.html" class="footer-link">→ Visitor Info</a><a href="contact.html" class="footer-link">→ Contact</a></div></div>
+      <div><h4 class="footer-col-title">All Zones</h4><div class="footer-links"><a href="#mini-india" class="footer-link">→ Mini India Zone</a><a href="#sarovar" class="footer-link">→ Vandana Sarovar</a><a href="#skywalk" class="footer-link">→ Skywalk</a><a href="#adventure" class="footer-link">→ Adventure Zone</a><a href="#fountain" class="footer-link">→ Musical Fountain</a><a href="#meditation" class="footer-link">→ Meditation Garden</a></div></div>
+      <div><h4 class="footer-col-title">Contact</h4><div class="footer-contact-list"><div class="footer-contact-item"><span>📍</span><span>Sector 20, Dwarka, New Delhi</span></div><div class="footer-contact-item"><span>📞</span><span>1800-11-0332</span></div><div class="footer-contact-item"><span>✉️</span><span>bvp@dda.gov.in</span></div></div></div>
+    </div></div></div>
+    <div class="footer-bottom"><div class="container"><p class="footer-copy">© 2025 Bharat Vandana Park. Delhi Development Authority (DDA).</p><div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div></div></div>
+  </footer>
+  <div class="lightbox"><button class="lightbox-close">✕</button><img class="lightbox-img" src="" alt="" /></div>
+  <button class="back-to-top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
